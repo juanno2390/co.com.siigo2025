@@ -28,5 +28,5 @@ Característica: E2E Clientes (tercero).
     Ejemplos:
       | identificación  | nombres     | apellidos       | ciudad     | ErrorMsg                                                     |
       | "1017846258"    | "JUan"      | "ACevedo"       | "Medellín" | "La identificación del tercero que estas creando ya existe." |
-      | "1011011126"    | "Matmud"    | ""              | "Bogotá" | "Tienes campos obligatorios sin completar."                  |
-      | "0005455"       | "Veronica"  | "Yepes Garcia"  | "Medellín" |"El campo 'Identificación' no tiene un formato correcto, solo se acepta valores numéricos y valor diferente a '0' en la primera posición." |
+      | "1011011126"    | "Matmud"    | ""              | "Bogotá"   | "Tienes campos obligatorios sin completar."                  |
+      | "0005455"       | "Veronica"  | "Yepes Garcia"  | "Medellín" | "El campo 'Identificación' no tiene un formato correcto, solo se acepta valores numéricos y valor diferente a '0' en la primera posición." |

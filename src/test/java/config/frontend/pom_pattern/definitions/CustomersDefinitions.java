@@ -16,7 +16,6 @@ public class CustomersDefinitions extends PageObject {
 
     @Dado("que El_Tester ingresa a la página inicial de Siigo Nube")
     public void goToHomePageLogin() {
-        //String scenario = getScenario();
         customersSteps.OpenHomePageLogin();
     }
 

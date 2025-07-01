@@ -3,7 +3,7 @@
 These packages generally contain application code.
 If you are writing a reusable test library, you can also place reusable test components such as Page Objects or Tasks here.
 
-# AutomatizacionPruebasCoreARL
+# AutomatizacionPruebas patron POM
 - Proyecto para la construcción de escenarios transversales automatizados.
 - El proyecto utiliza Java 8 , Serenity BDD, Cucumber 4
 - Los test están escritos en formato BDD Gherkin, el cual se representa como una documentación viva en el reporte de pruebas
@@ -13,7 +13,7 @@ If you are writing a reusable test library, you can also place reusable test com
 src
   main
     java
-      com.sura.<nombreProyecto>
+      co.com.<nombreProyecto>
         definitions                            //Contiene la definición de los pasos gherkin contenidos en el escenario de prueba (Capa de Negocio: donde se enuncia el "QUÉ" se requiere)
         exceptions                             //Contiene el manejo y/o personalización de las posibles excepciones que surjan en tiempo de ejecución. 
         models                                 //Contiene los objetos abstraídos del mundo real (Negocio) que contienen los atributos requeridos para contener los datos de prueba.
@@ -79,8 +79,10 @@ Toda las configuraciones para la ejecución de las pruebas mencionadas a continu
 
 ### Configuración del Webdriver
 La configuración para correr las pruebas en local y otras propiedades del explorador están definidas en dicho archivo.
+## WebDriver simplificado configuration and other Serenity extras
+Por defecto no se requiere especificar webDriver, Serenity se encarga de autodescargarlo
 
-El proyecto también incluye el WebDriver que se necesita para correr las pruebas, y se encuentran en el directorio `src/test/resources/webdriver`.
+El proyecto permite incluir el WebDriver que se necesita para correr las pruebas, y se encuentran en el directorio `src/test/resources/webdriver`.
 
 Esta configuración significa que las máquinas locales y los servidores de compilación no necesitan tener instalada una versión particular de los controladores WebDriver para que las pruebas se ejecuten correctamente.
 ```
